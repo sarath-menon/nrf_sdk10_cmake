@@ -1,6 +1,6 @@
 # PROGRAM = build/apps/uart/uart_demo
-PROGRAM = build/apps/blinky/blinky
-# PROGRAM = build/apps/bluetooth_demo/bluetooth_demo
+# PROGRAM = build/apps/blinky/blinky
+PROGRAM = build/apps/bluetooth_demo/bluetooth_demo
 # PROGRAM = build/apps/blinky_s130/blinky_s130
 
 OPENOCD           ?= openocd
