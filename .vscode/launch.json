@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "nRF51 Debug",
+            "cwd": "${workspaceRoot}",
+            "executable": "./build/apps/blinky/blinky.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "device": "nrf51822",
+            "svdFile": "nrf51.svd",
+            "runToEntryPoint": "main",
+            "servertype": "openocd",
+            "configFiles": [
+                "interface/stlink.cfg",
+                "target/nrf51.cfg"
+            ],
+            "preLaunchCommands": [
+                "set mem inaccessible-by-default off",
+                "enable breakpoint",
+                "monitor reset"
+            ]
+        },
+    ]
+}

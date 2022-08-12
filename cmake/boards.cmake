@@ -1,0 +1,1 @@
+include(cmake/nrf51.cmake)

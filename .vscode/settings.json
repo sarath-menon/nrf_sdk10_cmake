@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "app_uart.h": "c",
+        "nrf_drv_uart.h": "c",
+        "ble_advdata.h": "c",
+        "bsp_btn_ble.h": "c",
+        "bsp.h": "c",
+        "sdk_errors.h": "c",
+        "boards.h": "c"
+    }
+}
