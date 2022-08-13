@@ -37,12 +37,17 @@ set(CMAKE_SIZE          ${COMPILER_PREFIX}size)
 
 # flags common to both C and C++
 set(COMMON_FLAGS "${COMMON_FLAGS} -Wall  -ffunction-sections -fdata-sections -fno-strict-aliasing  -fno-builtin --short-enums")
+
 # flags specific to C++
-set(CXX_FLAGS "${COMMON_FLAGS} -fno-exceptions -fno-threadsafe-statics -fno-rtti -ffunction-sections -fdata-sections -fno-strict-aliasing  -fno-builtin --short-enums")
-set(CXX_FLAGS "${CXX_FLAGS} -Wall -Wextra -Wpedantic -Wsuggest-override -Wno-unused-parameter")
+set(CXX_FLAGS "${COMMON_FLAGS} -fno-exceptions -fno-threadsafe-statics -fno-rtti")
+set(CXX_FLAGS "${CXX_FLAGS} -Wextra -Wpedantic -Wsuggest-override -Wno-unused-parameter")
+
+# # assembler flags
+# set(ASM_FLAGS "-x assembler-with-cpp")
 
 set(CMAKE_C_FLAGS     "${COMMON_FLAGS} ")
 set(CMAKE_CXX_FLAGS   "${CXX_FLAGS}")
+# set(CMAKE_ASM_FLAGS   "${ASM_FLAGS}")
 
 # Linker flags
 set(LINKER_FLAGS
