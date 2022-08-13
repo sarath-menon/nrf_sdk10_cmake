@@ -13,8 +13,8 @@ set(NRF_SDK_SRC_FILES
         ${SDK_ROOT}/components/drivers_nrf/gpiote/nrf_drv_gpiote.c
         ${SDK_ROOT}/components/drivers_nrf/uart/nrf_drv_uart.c
         ${SDK_ROOT}/components/drivers_nrf/pstorage/pstorage.c
-        # ${SDK_ROOT}/examples/bsp/bsp.c
-        # ${SDK_ROOT}/examples/bsp/bsp_btn_ble.c
+        ${SDK_ROOT}/examples/bsp/bsp.c
+        ${SDK_ROOT}/examples/bsp/bsp_btn_ble.c
         ${SDK_ROOT}/components/ble/common/ble_advdata.c
         ${SDK_ROOT}/components/ble/ble_advertising/ble_advertising.c
         ${SDK_ROOT}/components/ble/common/ble_conn_params.c
@@ -47,5 +47,5 @@ set(NRF_SDK_INCLUDE
         ${SDK_ROOT}/components/libraries/timer
         ${SDK_ROOT}/components/drivers_nrf/hal
         ${SDK_ROOT}/components/libraries/button
-        # ${SDK_ROOT}/examples/bsp
+        ${SDK_ROOT}/examples/bsp
 )
